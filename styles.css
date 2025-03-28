@@ -1,9 +1,35 @@
-/* Media Queries Breakpoints for Responsive Design */
+/* 
+***************
+Media Queries Breakpoints for Responsive Design
+***************
+*/
 
 /* Mobile */
 @media only screen and (max-width: 600px){
     body{
         background-color: lightblue;
+    }
+
+    /* Navigation */
+    #logo_icon{
+        transition: 1s;
+        scale: .8;
+        /* border: 1px black solid; */
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    ul{
+        padding-left: 13%;
+        padding-top: 2%;
+        margin: 0;
+    }
+
+    ul > li{
+        padding-right: 8%;
+        font-size: 1.4em;
     }
 }
 
@@ -19,4 +45,116 @@
     body{
         background-color: lightgoldenrodyellow;
     }
+}
+
+/* 
+***************
+Global CSS
+***************
+*/
+
+/* Color Palette in Variables */
+:root{
+    --mainColor: #E63946;
+    --lightBeigeAccent: #F1FAEE;
+    --lightSeafoamAccent: #A8DADC;
+    --darkTurqoiseAccent: #457B9D;
+    --darkDeepBlueAccent: #1D3557;
+}
+
+/* Google Fonts */
+.dm-serif-display-regular {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dm-serif-display-regular-italic {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+/* Body */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "DM Serif Display", serif;
+}
+
+/* Grid Container */
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'main main main main main main'
+    'footer footer footer footer footer footer';
+
+    /* border: 1px black solid; */
+}
+
+/* Header */
+header{
+    margin: 0;
+    padding: 0;
+    
+    background-color: var(--mainColor);
+    border-radius: 0px 0px 15px 15px;
+    padding-bottom: 3%;
+    width: 100%;
+}
+
+#logo_div{
+    display: inline;
+    margin-top: 5%;
+}
+
+.grid-item-1{
+    grid-area: header;
+    /* border: 1px black solid; */
+}
+
+h1{
+    display: inline;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px #00000080;
+}
+
+/* Body */
+.grid-item-2{
+    grid-area: main;
+    /* border: 1px black solid; */
+}
+
+/* Footer */
+.grid-item-3{
+    grid-area: footer;
+    /* border: 1px black solid; */
+}
+
+/* Navigation Bar */
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+ul > li{
+    display: inline;
+}
+
+li > a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Links Edits */
+a{
+    cursor: pointer;
+    padding: .5em;
+    text-shadow: 1px 1px 4px #00000080;
+}
+
+a:hover{
+    transition: 1.5s;
+    background-color: var(--darkDeepBlueAccent);
 }

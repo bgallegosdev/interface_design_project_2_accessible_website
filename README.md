@@ -8,3 +8,7 @@ NBC News - https://www.nbcnews.com/news/us-news/california-wildfires-what-we-kno
 
 Mobile-First Design - https://www.uxpin.com/studio/blog/a-hands-on-guide-to-mobile-first-design/
 
+Palisades Fires Images - https://time.com/7205487/california-wildfire-palisades-fire-photos/
+
+LA Fires Timeline - https://www.nbclosangeles.com/news/california-wildfires/timeline-eaton-palisades-fires-la-county/3614940/
+
