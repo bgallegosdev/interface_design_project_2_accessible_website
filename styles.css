@@ -11,6 +11,10 @@ Media Queries Breakpoints for Responsive Design
     }
 
     /* Navigation */
+    header{
+        width: 100%;
+    }
+
     #logo_icon{
         transition: 1s;
         scale: .8;
@@ -18,12 +22,13 @@ Media Queries Breakpoints for Responsive Design
     }
 
     h1{
-        font-size: 2em;
+        font-size: 1.8rem;
     }
 
     ul{
-        padding-left: 13%;
-        padding-top: 2%;
+        box-sizing: border-box;
+        /* padding-left: 5%;
+        padding-top: 2%; */
         margin: 0;
     }
 
@@ -180,6 +185,7 @@ h1{
 /* Navigation Bar */
 ul{
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
 }
 
