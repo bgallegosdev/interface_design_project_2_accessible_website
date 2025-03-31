@@ -58,6 +58,7 @@ Media Queries Breakpoints for Responsive Design
     /* Timeline Section */
     h4{
         font-size: 2em;
+        padding-left: 5%;
     }
 
     #timelineArticle > div > p{
@@ -66,6 +67,28 @@ Media Queries Breakpoints for Responsive Design
     
     .timelineHeaders{
         font-weight: 900;
+    }
+
+    /* Photo Gallery Section */
+    #photoGridContainer{
+        padding-top: 5%;
+    }
+
+    h5{
+        font-size: 2em;
+    }
+
+    #photoGridContainer > p{
+        color: var(--darkDeepBlueAccent);
+        font-size: 1.3em;
+    }
+
+    #photoGridArticle{
+        display: grid;
+        grid-template-areas:
+        'picture picture';
+        justify-items: center;
+        align-items: center;
     }
 }
 
@@ -132,6 +155,7 @@ Media Queries Breakpoints for Responsive Design
     /* Timeline Section */
     h4{
         font-size: 3.5em;
+        padding-left: 5%;
     }
 
     #timelineArticle > div > p{
@@ -142,6 +166,27 @@ Media Queries Breakpoints for Responsive Design
         font-weight: 900;
     }
     
+    /* Photo Gallery Section */
+    #photoGridContainer{
+        padding-top: 5%;
+    }
+
+    h5{
+        font-size: 3.5em;
+    }
+
+    #photoGridContainer > p{
+        color: var(--darkDeepBlueAccent);
+        font-size: 2em;
+    }
+
+    #photoGridArticle{
+        display: grid;
+        grid-template-areas:
+        'picture picture';
+        justify-items: center;
+        align-items: center;
+    }
 }
 
 /* Desktop */
@@ -226,6 +271,27 @@ Media Queries Breakpoints for Responsive Design
         font-weight: 900;
     }
 
+    /* Photo Gallery Section */
+    #photoGridContainer{
+        padding-top: 5%;
+    }
+
+    h5{
+        font-size: 3.5em;
+    }
+
+    #photoGridContainer > p{
+        color: var(--darkDeepBlueAccent);
+        font-size: 2em;
+    }
+
+    #photoGridArticle{
+        display: grid;
+        grid-template-areas:
+        'picture picture picture';
+        justify-items: center;
+        align-items: center;
+    }
 }
 
 /* 
@@ -264,6 +330,12 @@ Global CSS
 
 .timelineIcons{
     width: 70%;
+}
+
+#photoGridArticle > div > a > img:hover{
+    transition: 300ms ease-in;
+    transform: translateY(-1px);
+    box-shadow: 2px 2px 10px #000000;
 }
 
 /* Body */
@@ -399,6 +471,7 @@ li > a{
     transition: .5s ease-in;
     box-shadow: 2px 2px 10px #000000;
     background-color: var(--darkDeepBlueAccent);
+    cursor: pointer;
 }
 
 .figLinks{
@@ -406,7 +479,9 @@ li > a{
 }
 
 .figLinks:hover{
+    color: var(--mainColor);
     text-decoration: underline;
+    cursor: pointer;
 }
 
 /* Footer */
