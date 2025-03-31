@@ -45,8 +45,16 @@ Media Queries Breakpoints for Responsive Design
     #introArticle{
         padding-left: 10%;
         padding-right: 10%;
+    }
+
+    #introArticle > p{
         font-size: 1.8em;
     }
+
+    h3{
+        font-size: 1.8em;
+    }
+    
 }
 
 /* Tablet */
@@ -85,11 +93,30 @@ Media Queries Breakpoints for Responsive Design
 
     /* Introduction Section */
     #introHeader{
-        font-size: 5rem;
+        font-size: 6rem;
     }
+
     #introImage{
         width: 70%;
     }
+
+    #screenshotImg{
+        width: 80%;
+    }
+
+    #introArticle{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    #introArticle > p{
+        font-size: 2.5em;
+    }
+
+    h3{
+        font-size: 4em;
+    }
+    
 }
 
 /* Desktop */
@@ -133,10 +160,31 @@ Media Queries Breakpoints for Responsive Design
 
     /* Introduction Section */
     #introHeader{
-        font-size: 4em;
+        font-size: 6em;
     }
     #introImage{
-        width: 50%;
+        width: 60%;
+    }
+
+    .screenshotImg{
+        width: 80%;
+    }
+
+    #introArticle{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    #introArticle > p{
+        font-size: 2em;
+    }
+
+    h3{
+        font-size: 3em;
+    }
+
+    figcaption{
+        font-size: 1.2em;
     }
 
 }
@@ -174,7 +222,6 @@ Global CSS
     width: 100%;
     height: auto;
   }
-
 
 /* Body */
 body{
@@ -233,7 +280,7 @@ h1{
     /* border: 1px black solid; */
 }
 
-#introImageContainer{
+.introImageContainer{
     display: flex;
     justify-content: center;
     margin: 0;
@@ -242,6 +289,11 @@ h1{
 
 #introArticle{
     line-height: 1.5;
+}
+
+hr{
+    width: 70%;
+    border: 3px solid var(--mainColor);
 }
 
 /* Footer */
@@ -278,6 +330,14 @@ li > a{
     transition: .5s ease-in;
     box-shadow: 2px 2px 10px #000000;
     background-color: var(--darkDeepBlueAccent);
+}
+
+.figLinks{
+    text-decoration: none;
+}
+
+.figLinks:hover{
+    text-decoration: underline;
 }
 
 /* Footer */
