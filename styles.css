@@ -54,7 +54,19 @@ Media Queries Breakpoints for Responsive Design
     h3{
         font-size: 1.8em;
     }
+
+    /* Timeline Section */
+    h4{
+        font-size: 2em;
+    }
+
+    #timelineArticle > div > p{
+        font-size: 1.3em;
+    }
     
+    .timelineHeaders{
+        font-weight: 900;
+    }
 }
 
 /* Tablet */
@@ -115,6 +127,19 @@ Media Queries Breakpoints for Responsive Design
 
     h3{
         font-size: 4em;
+    }
+
+    /* Timeline Section */
+    h4{
+        font-size: 3.5em;
+    }
+
+    #timelineArticle > div > p{
+        font-size: 1.8em;
+    }
+    
+    .timelineHeaders{
+        font-weight: 900;
     }
     
 }
@@ -187,6 +212,20 @@ Media Queries Breakpoints for Responsive Design
         font-size: 1.2em;
     }
 
+    /* Timeline Section */
+    h4{
+        font-size: 4em;
+        padding-left: 5%;
+    }
+
+    #timelineArticle > div > p{
+        font-size: 2em;
+    }
+    
+    .timelineHeaders{
+        font-weight: 900;
+    }
+
 }
 
 /* 
@@ -222,6 +261,10 @@ Global CSS
     width: 100%;
     height: auto;
   }
+
+.timelineIcons{
+    width: 70%;
+}
 
 /* Body */
 body{
@@ -294,6 +337,32 @@ h1{
 hr{
     width: 70%;
     border: 3px solid var(--mainColor);
+}
+
+/* Timeline Section */
+#timelineArticle{
+    color: #ffffff;
+    background-color: var(--darkTurqoiseAccent);
+
+    display: grid;
+    grid-template-areas:
+    'photo article';
+    justify-items: center;
+    align-items: center;
+
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 15%;
+
+    column-gap: 15px;
+    row-gap: 35px;
+}
+
+#timelineContainer{
+    color: #ffffff;
+    background-color: var(--darkTurqoiseAccent);
+    padding-top: 5%;
 }
 
 /* Footer */
