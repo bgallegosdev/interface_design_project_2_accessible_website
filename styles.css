@@ -719,7 +719,7 @@ li > a{
 .footerLinks:hover{
     cursor: pointer;
     text-decoration: underline;
-    text-shadow: 1px 1px 4px #00000080;
+    text-shadow: 1px 1px 4px #000000;
 }
 
 /* Footer */
@@ -732,4 +732,5 @@ footer{
     height: auto;
     background-color: var(--darkDeepBlueAccent);
     color: #ffffff;
+    text-shadow: 1px 1px 4px #00000080;
 }
