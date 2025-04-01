@@ -6,9 +6,9 @@ Media Queries Breakpoints for Responsive Design
 
 /* Mobile */
 @media only screen and (max-width: 600px){
-    body{
+    /* body{
         background-color: lightblue;
-    }
+    } */
 
     /* Navigation */
     header{
@@ -90,13 +90,90 @@ Media Queries Breakpoints for Responsive Design
         justify-items: center;
         align-items: center;
     }
+
+    /* Footer Section */
+    #footerGridContainer{
+        display: grid;
+        grid-template-areas: 
+        'sectionOne'
+        'sectionTwo'
+        'sectionThree'
+        'sectionFour'
+        'sectionFive';
+
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    #footerGridOne{
+        font-size: 1.5em;
+        grid-area: sectionOne;
+        padding-left: 2%;
+    }
+
+    #footerGridTwo{
+        grid-area: sectionTwo;
+        padding-left: 5%;
+        padding-bottom: 5%;
+    }
+
+    .footerHeaderTitles{
+        font-size: 1.3em;
+        margin: 0;
+    }
+
+    #footerGridTwo > ul{
+        display: grid;
+    }
+
+    #footerGridTwo > ul >li{
+        font-size: 1em;
+        padding: 2%;
+    }
+
+    #footerGridThree{
+        grid-area: sectionThree;
+        padding-left: 5%;
+        padding-right: 15%;
+        padding-bottom: 5%;
+    }
+
+    #footerGridThree > ul{
+        display: grid;
+    }
+
+    #footerGridThree > ul >li{
+        font-size: 1em;
+        padding: 2%;
+    }
+
+    #footerGridFour{
+        grid-area: sectionFour;
+        padding-left: 5%;
+        padding-right: 15%;
+        padding-bottom: 5%;
+    }
+
+    #footerGridFour > ul{
+        display: grid;
+    }
+
+    #footerGridFour > ul >li{
+        font-size: 1em;
+        padding: 2%;
+    }
+
+    #footerGridFive{
+        padding-left: 2%;
+        grid-area: sectionFive;
+    }
 }
 
 /* Tablet */
 @media only screen and (min-width: 600px){
-    body{
+    /* body{
         background-color: lightgreen;
-    }
+    } */
 
     /* Navigation */
     header{
@@ -187,13 +264,89 @@ Media Queries Breakpoints for Responsive Design
         justify-items: center;
         align-items: center;
     }
+
+    /* Footer Section */
+    #footerGridContainer{
+        display: grid;
+        grid-template-areas: 
+        'sectionOne sectionOne sectionOne'
+        'sectionTwo sectionThree sectionFour'
+        'sectionFive sectionFive sectionFive';
+        grid-template-columns: 30% 40% 30%;
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+
+    #footerGridOne{
+        font-size: 1.5em;
+        grid-area: sectionOne;
+        padding-left: 2%;
+    }
+
+    #footerGridTwo{
+        grid-area: sectionTwo;
+        padding-left: 20%;
+        padding-bottom: 5%;
+    }
+
+    .footerHeaderTitles{
+        font-size: 1.3em;
+        margin: 0;
+    }
+
+    #footerGridTwo > ul{
+        display: grid;
+    }
+
+    #footerGridTwo > ul >li{
+        font-size: 1em;
+        padding: 2%;
+    }
+
+    #footerGridThree{
+        grid-area: sectionThree;
+        padding-left: 5%;
+        padding-right: 15%;
+        padding-bottom: 5%;
+    }
+
+    #footerGridThree > ul{
+        display: grid;
+    }
+
+    #footerGridThree > ul >li{
+        font-size: 1em;
+        padding: 2%;
+    }
+
+    #footerGridFour{
+        grid-area: sectionFour;
+        padding-left: 5%;
+        padding-right: 15%;
+        padding-bottom: 5%;
+    }
+
+    #footerGridFour > ul{
+        display: grid;
+    }
+
+    #footerGridFour > ul >li{
+        font-size: 1em;
+        padding: 2%;
+    }
+
+    #footerGridFive{
+        padding-left: 2%;
+        grid-area: sectionFive;
+    }
+
 }
 
 /* Desktop */
 @media only screen and (min-width: 1030px){
-    body{
+    /* body{
         background-color: lightgoldenrodyellow;
-    }
+    } */
 
     /* Navigation */
     header{
@@ -291,6 +444,85 @@ Media Queries Breakpoints for Responsive Design
         'picture picture picture';
         justify-items: center;
         align-items: center;
+    }
+
+    /* Footer Section */
+    #footerGridContainer{
+        display: grid;
+        grid-template-areas: 
+        'sectionOne sectionOne sectionOne'
+        'sectionTwo sectionThree sectionFour'
+        'sectionFive sectionFive sectionFive';
+        grid-template-columns: 30% 40% 30%;
+        padding-top: 5%;
+    }
+
+    .footerInfoText{
+        font-size: 1.5em;
+        padding-left: 2%;
+    }
+
+    #footerGridOne{
+        font-size: 2.5em;
+        grid-area: sectionOne;
+        padding-left: 2%;
+    }
+
+    #footerGridTwo{
+        grid-area: sectionTwo;
+        padding-left: 20%;
+        /* padding-bottom: 5%; */
+    }
+
+    .footerHeaderTitles{
+        font-size: 2em;
+        margin: 0;
+    }
+
+    #footerGridTwo > ul{
+        display: grid;
+    }
+
+    #footerGridTwo > ul >li{
+        font-size: 1.2em;
+        padding: 2%;
+    }
+
+    #footerGridThree{
+        grid-area: sectionThree;
+        padding-left: 5%;
+        padding-right: 15%;
+        /* padding-bottom: 5%; */
+    }
+
+    #footerGridThree > ul{
+        display: grid;
+    }
+
+    #footerGridThree > ul >li{
+        font-size: 1.2em;
+        padding: 2%;
+    }
+
+    #footerGridFour{
+        grid-area: sectionFour;
+        padding-left: 5%;
+        padding-right: 15%;
+        /* padding-bottom: 5%; */
+    }
+
+    #footerGridFour > ul{
+        display: grid;
+    }
+
+    #footerGridFour > ul >li{
+        font-size: 1.2em;
+        padding: 2%;
+    }
+
+    #footerGridFive{
+        padding-left: 2%;
+        grid-area: sectionFive;
     }
 }
 
@@ -484,12 +716,18 @@ li > a{
     cursor: pointer;
 }
 
+.footerLinks:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-shadow: 1px 1px 4px #00000080;
+}
+
 /* Footer */
 footer{
     position: relative;
     left: 0;
     bottom: 0;
-    padding-bottom: 5%;
+    /* padding-bottom: 5%; */
     width: 100%;
     height: auto;
     background-color: var(--darkDeepBlueAccent);
